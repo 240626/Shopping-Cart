@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>🛒 My Shop</h2>
+
+    <div class="products">
+
+        <div class="product">
+            <h3>Mouse</h3>
+            <p>$20</p>
+            <button onclick="addToCart('Mouse',20)">Add</button>
+        </div>
+
+        <div class="product">
+            <h3>Keyboard</h3>
+            <p>$50</p>
+            <button onclick="addToCart('Keyboard',50)">Add</button>
+        </div>
+
+        <div class="product">
+            <h3>Headset</h3>
+            <p>$80</p>
+            <button onclick="addToCart('Headset',80)">Add</button>
+        </div>
+
+    </div>
+
+    <h3>Cart</h3>
+
+    <ul id="cart"></ul>
+
+    <h3 class="total">
+        Total: $<span id="total">0</span>
+    </h3>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
